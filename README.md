@@ -127,6 +127,13 @@ A glossary and ERD (entity relationship diagram) for all the created tables is i
 The entire Database has ben backed up in the "**PL_2022-23.sql**" file.
 
 
+## References
+1. [Manage PostgreSQL Databases from the Command Line with psql](https://www.freecodecamp.org/news/manage-postgresql-with-psql/)
+2. [Creating a table](https://www.youtube.com/watch?v=oReH2vO8Izc)
+3. [Importing csv file into Database](https://www.youtube.com/watch?v=RzRTZqLmEsI)
+4. [Saving a database locally](https://www.postgresql.org/docs/current/backup-dump.html)
+4. [Readme: key details at a glance – including a template](https://www.ionos.com/digitalguide/websites/web-development/readme-file/#:~:text=The%20table%20of%20contents%20can,and%20the%20list%20is%20created.)
+
 
 
 
