@@ -1,13 +1,27 @@
 # Premier League 20222/2023 Season Data Analysis
+In this project, I have selected raw data from Kaggle (seen below) focussed on the English Premier League.
+The goal of this project is to demonstrate the following PostgreSQL skills:
+* Data cleaning
+* Creating tables and importing data from csv files
+* Creating useful Joins
+* Creating derived columns with the aid of arithmetic operations
+* Use of aggregations to create useful columns
+* Use of CTE (common table expressions) in place of sub-queries
+* Use of window functions (especially rank) to create meaningful columns.
 
-In this project, we are given the following raw data as .csv files:
+Exploratory data analysis is carried out with the following tools:
+* PostgreSQL explorer extension on VS code: Run SQL (Postgres) queries.
+* Tableau Public: Data visualization
+* MS Word : Reporting
+
+In this project, the following raw data as .csv files is used:
 1. [2022-2023 Football Player Stats](https://www.kaggle.com/datasets/vivovinco/20222023-football-player-stats): This dataset contains 2022-2023 football player stats per 90 minutes. Only players of Premier League, Ligue 1, Bundesliga, Serie A and La Liga are listed. A table was created named "**player_stats**".
 2. [Premier League Stats 2022-2023](https://www.kaggle.com/datasets/thamersekhri/premier-league-stats-2022-2023): This dataset contains the stats of all the Premier League matches during the season 2022-2023. A table was created named "**game_stats**".
 
 ### Some Inconsistencies and Inaccuracies noted from Dataset:
 
 For the 2022-2023 Football Player Stats raw data:
-* Incoistency with stats per 90: 
+* Inconsistency with stats per 90: 
 Stats are meant to be per 90 (per 90 mins) but the data shown in the goals column can not be per 90. NB: Stat90 (stat per 90 mins) = (Total os stat / Total minutes played)* 90
 eg: Player: Erling Haaland, MP(total minutes played): 1636 Goals: 25; this stat cannot be per 90 otherwise this data would mean over the course of the season Haaland scored 454 goals.
 Other data in the dataset (eg: assists) are per 90 data.
@@ -16,9 +30,9 @@ Some of the data in the dataset is wrong (per real world data).
 eg: Player: Erling Haaland, Goals: 25 when the actual number of goals he scored in the premier league is 36.
 Player: Mohamed Salah, Goals: 7 when the actual number of goals he scored in the premier league is 19.
 * Lack of some data:
-eg: saves per 90 for keepers to help analyse keepers as well and possibly rank them as well.
+eg: saves per 90 for keepers to help analyze keepers as well and possibly rank them as well.
 
-Regardless of the inaccuracies and limitations in the data, the above 2 datasets were analysed as is.
+Regardless of the inaccuracies and limitations in the data, the above 2 datasets were analyzed as is.
 
 ## Analysis to be done
 
@@ -126,7 +140,6 @@ The "**team_stats**" table helps analyse the above metrics.
 A glossary and ERD (entity relationship diagram) for all the created tables is in the "**Tables.xlsx**" file.
 The entire Database has ben backed up in the "**PL_2022-23.sql**" file.
 
-
 ## References
 1. [Manage PostgreSQL Databases from the Command Line with psql](https://www.freecodecamp.org/news/manage-postgresql-with-psql/)
 2. [Creating a table](https://www.youtube.com/watch?v=oReH2vO8Izc)
@@ -134,7 +147,4 @@ The entire Database has ben backed up in the "**PL_2022-23.sql**" file.
 4. [Saving a database locally](https://www.postgresql.org/docs/current/backup-dump.html)
 5. [A90 (Assists per 90)](https://alvin-almazov.com/soccer-eng/a90-assists-per-90/) 
 6. [Readme: key details at a glance – including a template](https://www.ionos.com/digitalguide/websites/web-development/readme-file/#:~:text=The%20table%20of%20contents%20can,and%20the%20list%20is%20created.)
-
-
-
-
+7. [How to Export PostgreSQL Data to a CSV or Excel File](https://www.atlassian.com/data/sql/how-to-export-data-to-csv-or-excel)

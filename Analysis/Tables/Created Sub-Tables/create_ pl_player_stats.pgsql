@@ -13,8 +13,9 @@ AS
 
          og own_goals,
          goals,
-         assists,
 
+         -- from this pont, note that all stats are per 90
+         assists,
          shots,
          sot shots_on_target,
          shodist shot_distance,
