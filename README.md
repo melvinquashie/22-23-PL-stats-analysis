@@ -11,8 +11,7 @@ The goal of this project is to demonstrate the following PostgreSQL skills:
 
 Exploratory data analysis is carried out with the following tools:
 * PostgreSQL explorer extension on VS code: Run SQL (Postgres) queries.
-* Tableau Public: Data visualization
-* MS Word : Reporting
+* [Tableau Public: Data visualization](https://public.tableau.com/views/202223PremierLeague/GoalsPercentageaccrosscompetition?:language=en-GB&:display_count=n&:origin=viz_share_link) 
 
 In this project, the following raw data as .csv files is used:
 1. [2022-2023 Football Player Stats](https://www.kaggle.com/datasets/vivovinco/20222023-football-player-stats): This dataset contains 2022-2023 football player stats per 90 minutes. Only players of Premier League, Ligue 1, Bundesliga, Serie A and La Liga are listed. A table was created named "**player_stats**".
